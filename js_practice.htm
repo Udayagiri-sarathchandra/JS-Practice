@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops_js</title>
+    <link rel="stylesheet" href="../js_parctice.htm/bootstrap/bootstrap.css">
+</head>
+
+<body class="bg-success text-light h1 p-5 text-center">
+    <!--*****************************************************************************************-->
+    <div class="bg-dark w-75">
+        <h3>== operator</h3>
+        <script>
+            document.write(`10==10 is: ${10 == 10} <br />`)
+            document.write(`"10"==10 is: ${"10" == 10} <br /><br /><br />`)
+        </script>
+
+
+        <h3>=== operator</h3>
+        <script>
+            document.write(`10===10 is: ${10 === 10} <br />`)
+            document.write(`"10"===10 is: ${"10" === 10} <br /><br /><br />`)
+        </script>
+    </div>
+    <!--*****************************************************************************************-->
+    <div class="bg-secondary w-75">
+        <script>
+            /* print x values result is Multiple Times from 1 to 10 */
+
+            //step-1-> variable initialization
+            var x = 1
+
+            //step-2 condition
+            if (x == 1) //x == 1-> condition/expression
+            {
+                document.write(`x value is:${x} <br />`)
+                x++//++x
+            }
+
+            if (x == 2) //x == 2-> condition/expression
+            {
+                document.write(`x value is:${x} <br />`)
+                x++//++x
+            }
+
+
+            if (x == 3) //x == 2-> condition/expression
+            {
+                document.write(`x value is:${x} <br />`)
+                x++//++x
+            }
+
+
+            if (x == 4) //x == 2-> condition/expression
+            {
+                document.write(`x value is:${x} <br />`)
+                x++//++x
+            }
+
+
+            if (x == 5) //x == 2-> condition/expression
+            {
+                document.write(`x value is:${x} <br />`)
+                x++//++x
+            }
+
+
+            if (x == 6) //x == 2-> condition/expression
+            {
+                document.write(`x value is:${x} <br />`)
+                x++//++x
+            }
+
+
+            if (x == 7) //x == 2-> condition/expression
+            {
+                document.write(`x value is:${x} <br />`)
+                x++//++x
+            }
+
+
+            if (x == 8) //x == 2-> condition/expression
+            {
+                document.write(`x value is:${x} <br />`)
+                x++//++x
+            }
+
+
+            if (x == 9) //x == 2-> condition/expression
+            {
+                document.write(`x value is:${x} <br />`)
+                x++//++x
+            }
+
+
+
+            if (x == 10) //x == 2-> condition/expression
+            {
+                document.write(`x value is:${x} <br />`)
+                x++//++x
+            }
+
+
+
+
+
+        </script>
+    </div>
+    <!--*****************************************************************************************-->
+    <div class="bg-warning w-75">
+        <script>
+            /* print x values result is Multiple Times from 1 to 10 */
+
+            var x = 1
+
+            while (x <= 10)  //1<10....9<10-> true,  10<=10-false
+            {
+                document.write(`x value is:${x} <br />`)
+                x++
+            }
+
+        </script>
+
+    </div>
+    <!--*****************************************************************************************-->
+    <div class="bg-info w-75">
+
+        <select>
+            <script>
+                var x = 1
+                while (x <= 12) {
+                    document.write(`<option>${x}</option>`)
+                    x++
+                }
+
+            </script>
+        </select>
+
+    </div>
+    <!--*****************************************************************************************-->
+    <div class="bg-dark w-75">
+        <select>
+
+            <option>Days</option>
+
+            <script>
+                var x = 1
+                while (x <= 31) {
+                    document.write(`<option>${x}</option>`)
+                    x++
+                }
+            </script>
+        </select>
+
+
+
+        <select>
+
+            <option>Months</option>
+
+            <script>
+                var x = 1
+                while (x <= 12) {
+                    document.write(`<option>${x}</option>`)
+                    x++
+                }
+            </script>
+        </select>
+
+
+
+        <select>
+
+            <option>Year</option>
+
+            <script>
+                var x = 2021
+                while (x >= 1905) {
+                    document.write(`<option>${x}</option>`)
+                    x--
+                }
+            </script>
+        </select>
+
+    </div>
+    <!--*****************************************************************************************-->
+    <div class="bg-secondary w-75">
+        <script>
+
+            var emp = [101, "kumar", "kumar@gmail", 7896541230]
+            //0       1       2           3
+
+            //print all values
+            // document.write(`${emp} <br />`)
+
+
+            //Index of the array-> choose specific value from array values
+            //document.write(`<li>${emp[2]}</li>`) // emp[index]
+
+            var result = ""
+            result += "<ul>"
+            result += `<li>${emp[0]}</li>`
+            result += `<li>${emp[1]}</li>`
+            result += `<li>${emp[2]}</li>`
+            result += `<li>${emp[3]}</li>`
+            result += "</ul>"
+
+
+            document.write(result)
+
+
+        //document.write(`Size of the array is: ${emp.length} <br />`)
+
+        </script>
+
+    </div>
+    <!--*****************************************************************************************-->
+    <div>
+        <script>
+            var empl = ["sarath", "chandra", "sreevathya", "udayagiri", 9848022338]
+            //        0          1             2           3           4 
+
+            var result = ""
+            result += `<ul>
+                <li>${empl[3]}-${empl[2]}</li>
+                <li>${empl[2]}</li>
+                <li>${empl[0]}</li>
+                <li>${empl[1]}</li>
+                <li>${empl[4]}</li>
+                </ul> `
+
+            document.write(result)
+        </script>
+    </div>
+    <!--*****************************************************************************************-->
+    <div class="bg-dark">
+        <script>
+
+            //arrays with loops
+
+            var emp = [101, "sarath", "sree@gmail", 7896541230]
+            //0       1       2           3
+
+            var index = 0
+            while (index <= 3) {
+                document.write(` ${emp[index]}<br />`)
+                index++
+            }
+            document.write(emp.length)
+        </script>
+
+    </div>
+    <!--*****************************************************************************************-->
+
+
+    <!--*****************************************************************************************-->
+    <div class="bg-dark">
+        <script>
+            var source = 1
+            while (source <= 10) {
+                document.write(`<img src='images/${source}.png' width="10%" /> <br />`)
+                source++
+            }
+        </script>
+    </div>
+    <!--*****************************************************************************************-->
+
+</body>
+
+</html>
